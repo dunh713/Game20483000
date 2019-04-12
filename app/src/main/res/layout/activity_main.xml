@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginRight="8dp"
+    android:layout_height="160dp">
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="60sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/g2048"
+        android:text="2048"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/max"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:padding="2dp"
+
+        tools:ignore="RtlCompat">
+
+
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/diem"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:text="Max"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/txvMAX"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/diem"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="1dp"
+                android:text="Point"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/txvPoint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/max"
+        android:layout_toEndOf="@+id/imageView"
+        android:background="@drawable/bo"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="75dp"
+        tools:ignore="RtlCompat,UnknownId">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+           android:id="@+id/back"
+            android:padding="5dp"
+            android:src="@drawable/brack"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:text="5000 point"
+            android:textColor="#af9052"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/max"
+        android:layout_toEndOf="@+id/imageView"
+        android:background="@drawable/bo"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical"
+       android:layout_marginTop="30dp"
+        tools:ignore="RtlCompat,UnknownId">
+
+        <ImageView
+            android:id="@+id/newGame"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/newgame"
+            tools:ignore="OnClick" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center">
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gdvGamePlay"
+            android:numColumns="4"
+            android:background="@drawable/gb_bo_nen_nau">
+
+        </GridView>
+    </RelativeLayout>
+
+
+</LinearLayout>
